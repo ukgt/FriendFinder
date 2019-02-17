@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ukgt/FriendFinder#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "inquirer": "^6.2.2",
     "path": "^0.12.7"
