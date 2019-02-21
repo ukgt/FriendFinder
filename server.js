@@ -13,17 +13,16 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/public", express.static(__dirname + "/public"));
-app.use(bodyParser.text({
-     type: "text/html"
-}));
+app.use(bodyParser.text());
 // app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(bodyParser.json);
 
+// Requires and sets the HTML routes in this file
+require('./FriendFinder/routing/htmlRoutes.js');
 
-
-
-
-
+// Requires and sets the API routes in this file
+require('./FriendFinder/routing/apiRoutes.js');
+// FriendFinder\ routing\ apiRoutes.js
 
 
 // Starts the server to begin listening
