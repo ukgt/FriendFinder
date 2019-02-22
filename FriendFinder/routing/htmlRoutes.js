@@ -15,4 +15,9 @@ var htmlRouter = express.Router();
           res.sendFile(path.join(__dirname, '../public/survey.html'));
      });
 
+      //  about page
+     //  htmlRouter.get('/about', function (req, res) {
+     //       res.sendFile(path.join(__dirname, './public/survey.html'));
+     //  });
+
 module.exports = htmlRouter;

@@ -6,12 +6,13 @@ var apiRoutes = express.Router();
 
 
      // Sets the get for the api/friends route
-     apiRoutes.get('/api/friends', function (req, res) {
+     apiRoutes.get('/', function (req, res) {
           res.json(friends);
      });
 
      // Set the post for the api/friends route
      apiRoutes.post('/api/friends', function (req, res) {
+          // req.body;
           // Set variables only needed for the post
           var difference = 10;
           var matchName = '';
