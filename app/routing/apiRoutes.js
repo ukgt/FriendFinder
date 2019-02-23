@@ -1,17 +1,17 @@
 // Dependencies
-var friends = require('../app/data/friends.js');
-var express = require('express');
-var apiRoutes = express.Router();
+var friends = require('../data/friends.js');
+//var express = require('express');
+//var apiRoutes = express.Router();
 
-
+module.exports = function(app){
 
      // Sets the get for the api/friends route
-     apiRoutes.get('/', function (req, res) {
+     app.get('/api/friends', function (req, res) {
           res.json(friends);
      });
 
      // Set the post for the api/friends route
-     apiRoutes.post('/api/friends', function (req, res) {
+     app.post('/api/friends', function (req, res) {
           // req.body;
           // Set variables only needed for the post
           var difference = 10;
@@ -60,5 +60,4 @@ var apiRoutes = express.Router();
           // This adds the new users sent data object to friends.js
           friends.push(req.body);
      });
-
-module.exports = apiRoutes;
+}
