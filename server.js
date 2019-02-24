@@ -2,7 +2,7 @@
 // =============================================================
 var express = require("express");
 var path = require("path");
-var inquirer = require("inquirer");
+// var inquirer = require("inquirer");
 var bodyParser = require("body-parser");
 // const apiRoutes = require('./FriendFinder/routing/apiRoutes');
 
@@ -13,8 +13,12 @@ var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 // app.use("/public", express.static(__dirname + "/public"));
- app.use(bodyParser.urlencoded({ extended: false }));
- app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+ app.use(bodyParser.urlencoded({ extended: true }));
+//  app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+ // parse various different custom JSON types as JSON
+ app.use(bodyParser.json({type: 'application/*+json'}));
+ 
+
 
 // Requires and sets the HTML routes in this file
 //const htmlRoutes =  require('./app/routing/htmlRoutes.js');

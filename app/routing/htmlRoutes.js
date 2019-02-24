@@ -16,8 +16,4 @@ module.exports = function(app){
           res.sendFile(path.join(__dirname, "/../public/survey.html"));
      });
 
-     //  //  survey page
-     //  htmlRouter.get('/about', function (req, res) {
-     //       res.sendFile(path.join(__dirname, '../public/survey.html'));
-     //  });
 }
