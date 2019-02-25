@@ -1,7 +1,7 @@
 // Holds the array of friends
 var friends = [{
      "name": "Mallory Malone",
-     "photo": "https://www.pexels.com/photo/woman-wears-black-suit-jacket-photography-818819/",
+     "photo": "https://images.pexels.com/photos/818819/pexels-photo-818819.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
      "scores": ["5", "1", "4", "4", "5", "1", "2", "5", "4", "1"]
 }, {
      "name": "Jason Denny",
@@ -17,7 +17,7 @@ var friends = [{
      "scores": ["3", "3", "4", "2", "2", "1", "3", "2", "2", "3"]
 }, {
      "name": "Lou Ritter",
-     "photo": "https://www.pexels.com/photo/accomplishment-action-adult-adventure-372098/",
+     "photo": "https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
      "scores": ["4", "3", "4", "1", "5", "2", "5", "3", "1", "4"]
 }, {
      "name": "Jordan Brown",
