@@ -15,7 +15,7 @@ module.exports = function(app){
      app.post('/api/friends', function (req, res) {
           // variables needed for the post
           var post = req.body;
-          var difference = 10;
+          var difference = 40;
           var matchName = '';
           var matchPhoto = '';
 
